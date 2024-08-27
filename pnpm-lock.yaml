@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@electron/remote':
+        specifier: ^2.1.2
+        version: 2.1.2(electron@18.3.15)
     devDependencies:
       electron:
         specifier: ^18.0.2
@@ -17,6 +21,11 @@ packages:
   '@electron/get@1.14.1':
     resolution: {integrity: sha512-BrZYyL/6m0ZXz/lDxy/nlVhQz+WF+iPS6qXolEU8atw7h6v1aYkjwJZ63m+bJMBTxDE66X+r2tPS4a/8C82sZw==}
     engines: {node: '>=8.6'}
+
+  '@electron/remote@2.1.2':
+    resolution: {integrity: sha512-EPwNx+nhdrTBxyCqXt/pftoQg/ybtWDW3DUWHafejvnB1ZGGfMpv6e15D8KeempocjXe78T7WreyGGb3mlZxdA==}
+    peerDependencies:
+      electron: '>= 13.0.0'
 
   '@sindresorhus/is@0.14.0':
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
@@ -385,6 +394,10 @@ snapshots:
       global-tunnel-ng: 2.7.1
     transitivePeerDependencies:
       - supports-color
+
+  '@electron/remote@2.1.2(electron@18.3.15)':
+    dependencies:
+      electron: 18.3.15
 
   '@sindresorhus/is@0.14.0': {}
 

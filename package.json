@@ -2,9 +2,9 @@
   "name": "ElectronDmeo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "dev": "nodemon --exec electron .",
     "postinstall": "node node_modules/electron/install.js"
   },
   "config": {
@@ -17,5 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^18.0.2"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2"
   }
 }
